@@ -15,7 +15,7 @@ class DataExtractor:
 
         return db_creds
 
-    def init_db_engine(self):
+    def init_db_engine(self): # 
         db_creds = self.read_db_creds("db_creds.yaml")
         from sqlalchemy import create_engine 
         engine = create_engine(f"postgresql://{db_creds['RDS_USER']}:{db_creds['RDS_PASSWORD']}@{db_creds['RDS_HOST']}:{db_creds['RDS_PORT']}/{db_creds['RDS_DATABASE']}")
@@ -25,6 +25,8 @@ class DataExtractor:
        inspector = inspect(engine)
        tables = inspector.get_table_names()
        return tables
+    
+   #def read_rds_table(self, engine)'
         
     
 data_extractor = DataExtractor()
