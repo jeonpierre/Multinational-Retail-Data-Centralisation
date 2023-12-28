@@ -66,11 +66,13 @@ if __name__ == '__main__':
     from data_extractor import DataExtractor
     import jpype
     import os
-   # print(os.environ['JAVA_HOME']) 
-    #print(os.listdir(os.environ['JAVA_HOME']))
-    #print(jpype.getDefaultJVMPath())
-    #DatabaseConnector().upload_to_db(DataCleaning().clean_user_data(),'dim_users')    
-    #DatabaseConnector().upload_to_db(DataCleaning().clean_card_data(), 'dim_card_details')  
+# Below is how I carried out milestone tasks, although this should / will be done through a separate file in the future!
+    
+    # print(os.environ['JAVA_HOME']) 
+    # print(os.listdir(os.environ['JAVA_HOME']))
+    # print(jpype.getDefaultJVMPath())
+    # DatabaseConnector().upload_to_db(DataCleaning().clean_user_data(),'dim_users')    
+    # DatabaseConnector().upload_to_db(DataCleaning().clean_card_data(), 'dim_card_details')  
     # DatabaseConnector().upload_to_db(DataCleaning().clean_store_data(), 'dim_store_details')
 
     # Retrieve data from S3 Clean & Upload dim_products
