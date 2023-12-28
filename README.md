@@ -1,5 +1,7 @@
 # multinational-retail-data-centralisation26
 
+As of 28/12/23 This project is still a work in progress, whilst now fully functional there is alot of tidying and improvements i wish to make in the future (once less time pressure to complete the next projects :) ) 
+
 # Background 
 I work for a multinational company that sells various goods across the globe.
 
